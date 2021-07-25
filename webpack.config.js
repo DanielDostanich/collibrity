@@ -59,8 +59,26 @@ module.exports = {
         use: [MiniCSSExtractPlugin.loader, 'css-loader']
       },
       {
-        test: /\.s[ac]ss$/,
-        use: [MiniCSSExtractPlugin.loader, 'css-loader', 'sass-loader']
+        test: /\.(s([as])ss)$/,
+        use: [{
+          loader: MiniCSSExtractPlugin.loader
+        }, {
+          loader: 'css-loader'
+        }, {
+          loader: 'postcss-loader',
+          options: {
+            postcssOptions: {
+              plugins: function () {
+                return [
+                  require('autoprefixer')
+                ];
+              }
+            }
+          }
+        }, {
+          // compiles Sass to CSS
+          loader: 'sass-loader'
+        }]
       },
       {
         test: /\.(png|jpg|svg|gif)$/,

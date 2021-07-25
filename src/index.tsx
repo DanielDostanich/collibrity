@@ -1,9 +1,10 @@
-import './styles/styles.sass';
-import * as $ from 'jquery';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import './styles.sass'
+import * as $ from 'jquery'
+import * as bootstrap from 'bootstrap'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import App from './App';
+import App from './App'
 
 
 ReactDOM.render(
@@ -11,5 +12,5 @@ ReactDOM.render(
       <App />
     </React.StrictMode>,
     document.getElementById('root')
-);
+)
 
