@@ -76,7 +76,6 @@ module.exports = {
             }
           }
         }, {
-          // compiles Sass to CSS
           loader: 'sass-loader'
         }]
       },
