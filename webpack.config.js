@@ -30,7 +30,7 @@ const fileName = extension => isDev ? `[name].${extension}` : `[name].[contentha
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
-    main: './index.ts',
+    main: './index.tsx',
 
   },
   optimization: optimization(),
@@ -38,6 +38,9 @@ module.exports = {
   output: {
     filename: fileName('js'),
     path: path.resolve(__dirname, 'dist'),
+  },
+  resolve: {
+    extensions: [".tsx", ".json", ".js"],
   },
   plugins: [
     new HTMLWebpackPlugin({
@@ -85,6 +88,20 @@ module.exports = {
           options: {
             presets: [
               '@babel/preset-env',
+              '@babel/preset-typescript'
+            ]
+          }
+        }
+      },
+      {
+        test: /\.tsx$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react',
               '@babel/preset-typescript'
             ]
           }
