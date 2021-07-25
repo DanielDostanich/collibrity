@@ -5,6 +5,7 @@ import About from "./basicBlocks/About";
 import Recipients from "./basicBlocks/Recipients";
 import Results from "./basicBlocks/Results";
 import Authors from "./basicBlocks/Authors";
+import ContentList from "./basicBlocks/ContentList";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Recipients/>
       <Results/>
       <Authors/>
+      <ContentList/>
     </>
   );
 }
