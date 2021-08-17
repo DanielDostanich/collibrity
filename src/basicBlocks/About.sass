@@ -2,12 +2,65 @@
 @import '../scss/utils'
 
 .about
-  background-color: $basicColor0
+  background: url('assets/backgrounds/bg2.svg'), $basicColor0
+  background-size: cover
+  
+
+.about__text
+  font-family: Roboto-Light, Roboto, sans-serif
+  display: grid
+  text-align: justify
+
+@media (max-width: 700px) 
+  .about__title
+    font-size: 50px
+
+  .about
+    background: url('assets/backgrounds/bg2s.svg'), $basicColor0
+    background-size: cover
+
+  .about__text
+    grid-template-areas: "text1" "pict1" "text2" "pict2"
+    grid-template-columns: 100%
+    grid-template-rows: auto auto auto 0px
+    justify-items: center
+
+  .about__pict2
+    visibility: hidden
+    grid-area: pict2
+
+
+@media (min-width: 700px) 
+  .about__title
+    font-size: 75px
+
+  .about
+    background: url('assets/backgrounds/bg2.svg'), $basicColor0
+    background-size: cover
+
+  .about__text
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: 1fr 1fr
+    grid-template-areas: "pict1 text1 text1 text1 text1" "text2 text2 text2 text2 pict2"
+    font-size: 30px
+
+  .about__pict2
+    grid-area: pict2
+    height: 300px
+    width: auto
+
+.about__p1
+  grid-area: text1
+
+.about__p2
+  grid-area: text2
+
+.about__pict1
+  grid-area: pict1
+  height: 300px
+  width: auto
 
 .about__title
   text-align: center
-  padding: $titlePadding
-  font-size: $titleFontSize
-
-.about__text
-  font-size: 1.7rem
+  margin: 35px 0px 35px 0px
+  font-family: Roboto-MediumItalic, Roboto, sans-serif

@@ -1,4 +1,5 @@
 import './styles.sass'
+import './scss/fonts.css'
 import * as $ from 'jquery'
 import * as bootstrap from 'bootstrap'
 import React from 'react'

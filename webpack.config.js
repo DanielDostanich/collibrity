@@ -80,12 +80,8 @@ module.exports = {
         }]
       },
       {
-        test: /\.(png|jpg|svg|gif)$/,
+        test: /\.(png|jpg|gif)$/,
         use: ['file-loader'],
-      },
-      {
-        test: /\.(ttf|woff|woff2)$/,
-        use: ['file-loader']
       },
       {
         test: /\.m?js$/,

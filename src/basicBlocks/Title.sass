@@ -1,17 +1,31 @@
 @import '~bootstrap/scss/containers'
 @import '../scss/utils'
+
 .title
-  height: 100vh
-  background-color: $basicColor1
+  height: 900px
+  width: 100%
+  background: url('assets/backgrounds/bg1.svg'), $basicColor1
+  background-size: cover
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+
+.title__text
   display: flex
   flex-direction: column
-  justify-content: flex-end
-
-.title__guide
-  font-size: 6rem
+  justify-content: center
+  margin-top: 7%
 
 .title__name
-  font-size: 8rem
+  font-family: Roboto-BoldItalic, Roboto, sans-serif
+  font-size: 12vh
 
 .title__author
-  font-size: 5rem
+  font-family: Roboto-LightItalic, Roboto, sans-serif
+  font-size: 5vh
+
+
+.title__pict
+  mix-blend-mode: normal
+  max-width: 30%
+  height: auto
