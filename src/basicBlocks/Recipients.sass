@@ -2,13 +2,38 @@
 @import '../scss/utils'
 
 .recipients
-  background-color: $basicColor2
-  padding: 1rem
+  background: url('assets/backgrounds/bg3.svg'), $basicColor1
+  background-size: cover
+  padding-bottom: 35px
 
 .recipients__title
+  font-family: Roboto-MediumItalic, Roboto, sans-serif
   text-align: center
-  padding: $titlePadding
-  font-size: $titleFontSize
+  margin-bottom: 35px
+  padding-top: 35px
+  font-size: $titleFontSizeFull
 
 .recipients__list
-  font-size: 1.5rem
+  list-style-image: url('assets/ListDot.svg')
+  max-width: 864px
+
+.recipients__text
+  font-family: Roboto-Light, Roboto, sans-serif
+  display: flex
+  flex-wrap: wrap
+
+.recipients__img
+  max-width: 430px
+  height: auto
+  flex-shrink: 0
+
+@media (min-width: 700px) 
+  .recipients__text
+    font-size: $textFontSizeFull
+
+  .recipients__title
+    font-size: $titleFontSizeFull
+
+@media (max-width: 700px) 
+  .recipients__title
+    font-size: $titleFontSizeMobi

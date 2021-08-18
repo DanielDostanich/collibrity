@@ -8,8 +8,8 @@ import pict3 from '../assets/picts/pict3.png'
 
 export default function About() {
   return (
-    <div className="about">
-      <div className="about__container container-xxl">
+    <section className="about">
+      <div className="about__container container">
         <div className="about__title">
           О ЧЕМ ГАЙД?
         </div>
@@ -24,6 +24,6 @@ export default function About() {
           <img src={pict3} alt="" className="about__pict2" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
