@@ -1,15 +1,30 @@
 @import '~bootstrap/scss/containers'
 @import '../scss/utils'
 
+.results
+  background: url('assets/backgrounds/bg4.svg'), $basicColor0
+  background-size: cover
 
 .results__title
+  font-family: Roboto-MediumItalic, Roboto, sans-serif
   text-align: center
-  padding: $titlePadding
-  font-size: $titleFontSize
+  margin: 35px 0px 35px 0px
 
-.results__intro-text, .results__outro-text
-  font-size: 1.7rem
+.results__text
+  font-family: Roboto-Light, Roboto, sans-serif
+  border-radius: 30px
+  background-color: $basicColor1
+  margin-left: 10px
+  margin-right: 10px
+  padding: 20px
 
-.results__list-item
-  list-style-type: none
-  font-size: 1.5rem
+@media (min-width: 700px) 
+  .results__list
+    font-size: $textFontSizeFull
+
+  .results__title
+    font-size: $titleFontSizeFull
+
+@media (max-width: 700px) 
+  .results__title
+    font-size: $titleFontSizeMobi
