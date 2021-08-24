@@ -2,7 +2,7 @@ import React from "react"
 
 
 // @ts-ignore
-import pict1 from '../assets/picts/pict1n.png'
+import pict1 from '../assets/picts/pict1.png'
 
 export default function Title() {
   return (
