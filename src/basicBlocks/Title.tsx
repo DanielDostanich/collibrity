@@ -2,9 +2,7 @@ import React from "react"
 
 
 // @ts-ignore
-import bg1 from '../assets/backgrounds/bg1.svg'
-// @ts-ignore
-import pict1 from '../assets/picts/pict1.png'
+import pict1 from '../assets/picts/pict1n.png'
 
 export default function Title() {
   return (
