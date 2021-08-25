@@ -1,38 +1,84 @@
 @import '~bootstrap/scss/containers'
 @import '../scss/utils'
 
-.recipients
-  background: url('assets/backgrounds/bg3.svg'), $basicColor1
-  background-size: cover
-  padding-bottom: 35px
-
 .recipients__title
   font-family: Roboto-MediumItalic, Roboto, sans-serif
   text-align: center
-  margin-bottom: 35px
   padding-top: 35px
+  padding-bottom: 35px
 
-.recipients__list
-  list-style-image: url('assets/ListDot.svg')
-  max-width: 864px
+.recipients__content
+  display: grid
 
 .recipients__text
   font-family: Roboto-Light, Roboto, sans-serif
   display: flex
-  flex-wrap: wrap
+  flex-direction: column
+  text-align: justify
 
-.recipients__img
-  max-width: 430px
-  height: auto
-  flex-shrink: 0
+.recipients__subtitle
+  font-family: Roboto-Regular, Roboto, sans-serif
+  padding-left: 30px
+  
 
-@media (min-width: 700px) 
-  .recipients__text
-    font-size: $textFontSizeFull
+@media (min-width: 600px)
+  .recipients
+    background: url('assets/backgrounds/bg3.svg'), $basicColor1
+    background-size: auto
+    background-position: right top
+    background-repeat: no-repeat
+
+  .recipients__content
+    grid-template-rows: auto
+    grid-template-columns: 70% 30%
 
   .recipients__title
     font-size: $titleFontSizeFull
 
-@media (max-width: 700px) 
+  .recipients__subtitle
+    font-size: 34px
+
+  .recipients__text
+    font-size: $textFontSizeFull
+    margin-left: 20%
+
+  .recipients__list
+    list-style-position: outside
+    list-style-image: url('assets/ListDotBig.svg')
+
+  .recipients__img
+    width: 30vw
+    height: auto
+
+@media (max-width: 600px)
+  .recipients
+    background: url('assets/backgrounds/bg3s.svg'), $basicColor1
+    background-size: auto
+    background-repeat: no-repeat
+    background-position: top right
+    min-height: 100vh
+
+  recipients__content
+    grid-template-rows: auto auto
+    grid-template-columns: auto
+
   .recipients__title
     font-size: $titleFontSizeMobi
+
+  .recipients__subtitle
+    font-size: 18px
+
+  .recipients__text
+    font-size: $textFontSizeMobi
+    line-height: 27px
+    margin-left: 6%
+    margin-right: 11%
+
+  .recipients__list
+    list-style-position: outside
+    list-style-image: url('assets/ListDotSmall.svg')
+
+  .recipients__img
+    width: 70%
+    height: auto
+    justify-self: center

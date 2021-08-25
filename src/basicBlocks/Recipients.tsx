@@ -6,23 +6,22 @@ import pict from '../assets/picts/pict4.png'
 export default function Recipients() {
   return (
     <section className="recipients">
-      <div className="recipients__container container">
-        <div className="recipients__title">
-          ДЛЯ КОГО ЭТОТ ПРОДУКТ?
-        </div>
+      <div className="recipients__title">
+        ДЛЯ ЧЕГО ЭТОТ ПРОДУКТ?
+      </div>
+      <div className="recipients__content">
         <div className="recipients__text">
+          <div className="recipients__subtitle">Если ты хочешь:</div>
           <ul className="recipients__list">
-            <ListItem text={'Для тех, кто очень увлекается психологией'} />
-            <ListItem text={'Для тех, кто хочет расширить границы своего мышления'} />
-            <ListItem text={'Для тех, кто погряз в рутине и почти не испытывает положительных эмоций'} />
-            <ListItem text={'Для тех, у кого есть множество неразрешенных проблем, которые тянутся уже долгое время'} />
-            <ListItem text={'Для тех, кто наконец хочет что-то изменить в своей жизни'} />
-            <ListItem text={'Для тех, кто желает глубже понимать аспекты нашей жизни'} />
-            <ListItem text={'Для тех, кто стремится быть лучше и улучшать свою жизнь'} />
-            <ListItem text={'Для тех, кто хочет работать над собой'} />
+            <ListItem text={'Изучать психологию'} />
+            <ListItem text={'Больше понимать себя и начать что-то менять в своей жизни'} />
+            <ListItem text={'Найти выход, если погряз в рутине и почти не испытываешь положительных эмоций'} />
+            <ListItem text={'Решить множество неразрешённых проблем'} />
+            <ListItem text={'Стремиться быть лучше и улучшать свою жизнь'} />
+            <ListItem text={'Работать над собой'} />
           </ul>
-          <img src={pict} alt="" className="recipients__img" />
         </div>
+        <img src={pict} alt="" className="recipients__img" />
       </div>
     </section>
   )
