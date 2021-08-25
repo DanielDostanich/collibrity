@@ -1,66 +1,67 @@
 @import '~bootstrap/scss/containers'
-@import '../scss/utils'
+@import '../scss/utils'  
 
-.about
-  background: url('assets/backgrounds/bg2.svg'), $basicColor0
-  background-size: cover
-  
+.about__title
+  text-align: center
+  font-family: Roboto-MediumItalic, Roboto, sans-serif
 
 .about__text
   font-family: Roboto-Light, Roboto, sans-serif
   display: grid
   text-align: justify
 
-@media (max-width: 700px) 
-  .about__title
-    font-size: $titleFontSizeMobi
+.about__pict
+  grid-area: g_about__pict
 
-  .about
-    background: url('assets/backgrounds/bg2s.svg'), $basicColor0
-    background-size: cover
+.about__p
+  grid-area: g_about__text
 
-  .about__text
-    grid-template-areas: "text1" "pict1" "text2" "pict2"
-    grid-template-columns: 100%
-    grid-template-rows: auto auto auto 0px
-    justify-items: center
-
-  .about__pict2
-    visibility: hidden
-    grid-area: pict2
-
-
-@media (min-width: 700px) 
-  .about__title
-    font-size: $titleFontSizeFull
-
+@media (min-width: 600px) 
   .about
     background: url('assets/backgrounds/bg2.svg'), $basicColor0
     background-size: cover
 
+  .about__title
+    font-size: $titleFontSizeFull
+    padding-top: 2rem
+    padding-bottom: 2rem
+
   .about__text
-    grid-template-columns: repeat(5, 1fr)
-    grid-template-rows: 1fr 1fr
-    grid-template-areas: "pict1 text1 text1 text1 text1" "text2 text2 text2 text2 pict2"
+    grid-template-columns: 30% 70%
+    grid-template-rows: auto
+    grid-template-areas: "g_about__pict g_about__text"
     font-size: $textFontSizeFull
+    
+  .about__pict
+    height: auto
+    max-width: 30vw
 
-  .about__pict2
-    grid-area: pict2
-    height: 300px
-    width: auto
+  .about__p
+    align-self: center
+    margin-right: 20%
 
-.about__p1
-  grid-area: text1
+@media (max-width: 600px) 
+  .about
+    min-height: 100vh
+    background: url('assets/backgrounds/bg2s.svg'), $basicColor0
+    background-size: cover
 
-.about__p2
-  grid-area: text2
+  .about__title
+    font-size: $titleFontSizeMobi
+    padding-top: 1.5rem
 
-.about__pict1
-  grid-area: pict1
-  height: 300px
-  width: auto
+  .about__text
+    grid-template-areas: "g_about__text" "g_about__pict"
+    grid-template-columns: auto
+    grid-template-rows: auto auto 
+    justify-items: center
+    padding-top: 3.4rem
+    line-height: 27px
+    font-size: 14px
 
-.about__title
-  text-align: center
-  margin: 35px 0px 35px 0px
-  font-family: Roboto-MediumItalic, Roboto, sans-serif
+  .about__pict
+    width: 100%
+
+  .about__p
+    margin-right: 14%
+    margin-left: 14%
