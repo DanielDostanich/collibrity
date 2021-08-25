@@ -1,35 +1,54 @@
 import React from "react";
 
-export default function ContentList(){
+// @ts-ignore
+import pict from '../assets/picts/pict5.png'
+
+export default function ContentList() {
   return (
-    <div className="content-list container-fluid">
-      <div className="content-list__title">
-        Содержание Гайда
+    <section className="content-list">
+      <div className="content-list__container container">
+        <div className="content-list__title">
+          СОДЕРЖАНИЕ ГАЙДА
+        </div>
+        <ul className="content-list__list">
+          <ListItem text={'Введение (что будет в Гайде, почему он на такую тему, рекомендации к прочтению)'} />
+          <ListItem text={'Наше восприятие всего в жизни'} />
+          <ListItem text={'Отношения с самим собой'} />
+          <ListItem text={'Самоценность (полное принятие себя, уверенности)'} />
+          <ListItem text={'Личные границы (тест + теория)'} />
+          <ListItem text={'Уверенность в себе'} />
+          <ListItem text={'Целостность (что это такое, как её достичь)'} />
+          <ListItem text={'Взаимоотношения с окружающими людьми'} />
+          <ListItem text={'Отношения между мужчиной и женщиной'} />
+          <ListItem text={'Неопределенность (страх будущего, неуверенность в завтрашнем дне)'} />
+          <ListItem text={'Заключение'} />
+        </ul>
+        <img src={pict} alt="" className="content-list__image" />
       </div>
-      <ul className="content-list__list list-group">
-        <ListItem text={'Введение (что будет в Гайде, почему он на такую тему, рекомендации по прочтению)'}/>
-        <ListItem text={'Наше восприятие всего в жизни'}/>
-        <ListItem text={'Отношения с самим собой'}/>
-        <ListItem text={'Самоценность (полное принятие себя, ощущение внутренней гармонии, цельности, уверенности в себе)'}/>
-        <ListItem text={'Личные границы (тест + теория: наше личное пространство, интересы, убеждения, принципы, ценности, зачем защищать свои личные границы, как их выстраивать)'}/>
-        <ListItem text={'Уверенность в себе'}/>
-        <ListItem text={'Целостность (что это такое, как ее достичь)'}/>
-        <ListItem text={'Взаимоотношения с окружающими людьми'}/>
-        <ListItem text={'Отношения между мужчиной и женщиной'}/>
-        <ListItem text={'Неопределённость (страх будущего, непонимание себя, неуверенность в завтрашнем дне)'}/>
-        <ListItem text={'Заключение'}/>
-      </ul>
-    </div>
+    </section>
   )
 }
 
-interface ListItemInfo{
+/*.content-list::after
+  content: ""
+  background: url('assets/picts/pict6.gif')
+  background-size: 600px
+  background-position: right bottom
+  background-repeat: no-repeat
+  opacity: 50%
+  position: static
+  top: 0px
+  right: 0px
+  bottom: 0px
+  left: 0px */
+
+interface ListItemInfo {
   text: string
 }
 
-function ListItem({text}: ListItemInfo){
+function ListItem({ text }: ListItemInfo) {
   return (
-    <li className="content-list__item list-group-item">
+    <li className="content-list__item">
       {text}
     </li>
   )

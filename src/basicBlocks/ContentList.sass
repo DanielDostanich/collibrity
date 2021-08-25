@@ -1,13 +1,60 @@
 @import '~bootstrap/scss/containers'
 @import '../scss/utils'
 
+.content-list
+  position: relative
+  min-height: 100vh
+
 .content-list__title
+  font-family: Roboto-MediumItalic, Roboto, sans-serif
   text-align: center
-  font-size: $titleFontSize
-  padding: $titlePadding
+  padding-top: 35px
+  padding-bottom: 35px
 
 .content-list__list
-  margin: 0 30% 0 30%
+  font-family: Roboto-Light, Roboto, sans-serif
 
-.content-list__item
-  font-size: 1.5rem
+.content-list__image
+  position: absolute
+
+@media (min-width: 600px) 
+  .content-list
+    background: url('assets/backgrounds/bg5.svg'), $basicColor1
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+  .content-list__list
+    font-size: $textFontSizeFull
+
+  .content-list__title
+    font-size: $titleFontSizeFull
+
+  .content-list__image
+    height: auto
+    width: 30vw
+    right: 0px
+    bottom: 0px
+    opacity: 50%
+
+@media (max-width: 600px) 
+  .content-list
+    background: url('assets/backgrounds/bg5s.svg'), $basicColor1
+    background-size: auto
+    background-position: top left
+    background-repeat: no-repeat
+
+  .content-list__title
+    font-size: $titleFontSizeMobi
+
+  .content-list__list
+    font-size: $textFontSizeMobi
+    line-height: 27px
+
+  .content-list__image
+    width: 100%
+    height: auto
+    opacity: 25%
+    bottom: 0px
+    left: 0px
+    
