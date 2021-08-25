@@ -1,30 +1,55 @@
 @import '~bootstrap/scss/containers'
-@import '../scss/utils'
-
-.results
-  background: url('assets/backgrounds/bg4.svg'), $basicColor0
-  background-size: cover
+@import '../scss/utils' 
 
 .results__title
   font-family: Roboto-MediumItalic, Roboto, sans-serif
-  text-align: center
-  margin: 35px 0px 35px 0px
-
+  text-align: center  
+  
 .results__text
   font-family: Roboto-Light, Roboto, sans-serif
-  border-radius: 30px
   background-color: $basicColor1
-  margin-left: 10px
-  margin-right: 10px
-  padding: 20px
+  text-align: justify
 
-@media (min-width: 700px) 
-  .results__list
-    font-size: $textFontSizeFull
+@media (min-width: 600px) 
+  .results
+    background: url('assets/backgrounds/bg4.svg'), $basicColor0
+    background-size: cover
+
+  .results__text
+    border-radius: 30px
+    margin-left: 10px
+    margin-right: 10px
+    padding: 20px 
+
+  .results__container
+    padding-bottom: 8rem
 
   .results__title
     font-size: $titleFontSizeFull
+    padding-top: 35px
+    padding-bottom: 35px
 
-@media (max-width: 700px) 
+  .results__list
+    font-size: $textFontSizeFull
+
+@media (max-width: 600px) 
+  .results
+    background: url('assets/backgrounds/bg4s.svg'), $basicColor0
+    background-size: cover
+    padding-bottom: 2rem
+
   .results__title
     font-size: $titleFontSizeMobi
+    padding-top: 1.5rem
+    padding-bottom: 2rem
+    
+  .results__text
+    font-size: $textFontSizeMobi
+    line-height: 27px
+    margin-left: 7%
+    margin-right: 7%
+    padding-top: 2.2rem
+    padding-bottom: 1.8rem
+    padding-right: 1rem
+    border-radius: 10%
+
