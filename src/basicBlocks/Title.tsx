@@ -6,7 +6,7 @@ import pict1 from '../assets/picts/pict1.png'
 
 export default function Title() {
   return (
-    <section className="title">
+    <section className="title container-fluid">
       <div className="title__text">
         <div className="title__name">С МЕНЯ ХВАТИТ!</div>
         <div className="title__author">ОТ ЕВЫ @COLLIBRITY</div>

@@ -19,3 +19,21 @@ export default function App() {
     </>
   );
 }
+
+
+/*
+
+
+
+      
+      <Title/>
+      <About/>
+      <Recipients/>
+      <Results/>
+      <ContentList/>
+      <Selling/>
+      
+      
+      
+
+*/

@@ -29,19 +29,6 @@ export default function ContentList() {
   )
 }
 
-/*.content-list::after
-  content: ""
-  background: url('assets/picts/pict6.gif')
-  background-size: 600px
-  background-position: right bottom
-  background-repeat: no-repeat
-  opacity: 50%
-  position: static
-  top: 0px
-  right: 0px
-  bottom: 0px
-  left: 0px */
-
 interface ListItemInfo {
   text: string
 }

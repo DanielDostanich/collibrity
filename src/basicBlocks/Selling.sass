@@ -2,3 +2,127 @@
 @import '../scss/utils'
 
 
+.selling__title
+  text-align: center
+  font-family: Roboto-MediumItalic, Roboto, sans-serif
+  padding-top: 35px
+  padding-bottom: 35px
+
+.selling__content
+  display: flex
+  justify-content: center
+
+.selling__card
+  display: flex
+  justify-content: center
+  flex-direction: column
+  text-align: center
+  
+selling__card-title
+  font-family: Roboto-MediumItalic
+
+.selling__card-top-text
+  font-family: Roboto-Light
+
+.selling__card-top-text-first
+  font-family: Roboto-Light
+
+.selling__card-bottom-text
+  font-family: Roboto-Light
+
+@media (min-width: 600px) 
+  .selling
+    background: url('assets/backgrounds/bg6.svg'), $basicColor0
+    background-size: cover
+    margin-bottom: 4rem
+
+  .selling__stroke-right
+    border-right: 1px solid #d7d7d7
+
+  .selling__title
+    font-size: $titleFontSizeFull
+  
+  .selling__content
+    flex-direction: row
+    font-size: $textFontSizeSmallFull
+
+  .selling__card
+    padding-left: 3rem
+    padding-right: 3rem
+
+  .selling__card-title
+    margin-top: 2rem
+    margin-bottom: 2rem
+
+  
+  .selling__card-first-border
+    margin-top: 2.5rem
+    margin-bottom: 3rem  
+
+  .selling__card-top-text
+    padding-top: 2rem
+    padding-bottom: 2rem
+    border-top: 1px solid #d7d7d7
+    border-bottom: 1px solid #d7d7d7
+
+  .selling__card-bottom-text
+    margin-top: 2rem
+    padding-bottom: 2rem
+    border-bottom: 1px solid #d7d7d7
+
+  .selling__card-price
+    margin-top: 2rem
+    margin-bottom: 2rem
+
+  .selling__card-button
+    background-color: $basicColor3
+    color: #fff
+    width: 7rem
+    margin: 0 auto
+
+
+@media (max-width: 600px) 
+  .selling
+    background: url('assets/backgrounds/bg6s.svg'), $basicColor0
+    background-size: cover
+
+  .selling__title
+    font-size: $titleFontSizeMobi
+
+  .selling__content
+    flex-direction: column
+    font-size: $textFontSizeMobi
+
+  .selling__card
+    border-bottom: 2px solid #d7d7d7
+    padding-bottom: 2rem
+
+  .selling__card-title
+    margin-top: 2rem
+    margin-bottom: 2rem
+
+  .selling__card-top-text
+    margin-left: 10%
+    margin-right: 10%
+    padding-top: 2rem
+    padding-bottom: 2rem
+    border-top: 1px solid #d7d7d7
+    border-bottom: 1px solid #d7d7d7
+
+  .selling__card-bottom-text
+    margin-left: 10%
+    margin-right: 10%
+    margin-top: 2rem
+    padding-bottom: 2rem
+    border-bottom: 1px solid #d7d7d7
+
+  .selling__card-price
+    margin-top: 2rem
+    margin-bottom: 2rem
+
+  .selling__card-button
+    background-color: $basicColor3
+    color: #fff
+    width: 5rem
+    margin: 0 auto
+    

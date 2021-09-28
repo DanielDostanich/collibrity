@@ -5,7 +5,7 @@ import pict2 from '../assets/picts/pict2.png'
 
 export default function About() {
   return (
-    <section className="about">
+    <section className="about container-fluid">
 
       <div className="about__title">
         О ЧЕМ ГАЙД?

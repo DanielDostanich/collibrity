@@ -5,7 +5,7 @@ import pict from '../assets/picts/pict4.png'
 
 export default function Recipients() {
   return (
-    <section className="recipients">
+    <section className="recipients container-fluid">
       <div className="recipients__title">
         ДЛЯ ЧЕГО ЭТОТ ПРОДУКТ?
       </div>
