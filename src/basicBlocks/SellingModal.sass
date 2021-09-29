@@ -1,0 +1,48 @@
+@import '../scss/utils'
+
+.selling-modal
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba(0, 0, 0, 0.5)
+  display: flex
+  justify-content: center
+  padding-top: 5rem
+
+.selling-modal__body
+  padding: 2rem
+  background-color: #fff
+  font-family: Roboto-Light, Roboto, sans-serif
+  display: flex
+  justify-content: center
+  flex-direction: column
+  text-align: center
+
+.selling-modal__body--title
+  font-family: Roboto-MediumItalic, Roboto, sans-serif
+  font-size: $titleFontSizeFull
+
+.selling-modal__body--button
+  background-color: $basicColor3
+  color: #fff
+  margin: 0 auto
+  width: 7rem
+
+@media (min-width: 600px)
+  .selling-modal__body
+    padding: 2rem
+    width: 40%
+    height: 40%
+    font-size: $textFontSizeFull
+
+@media (max-width: 600px)
+  .selling-modal__body
+    padding: 4rem
+    width: 70%
+    height: 40%
+    font-size: $textFontSizeMobi
+
+  .selling-modal__body--title
+    font-size: $titleFontSizeMobi

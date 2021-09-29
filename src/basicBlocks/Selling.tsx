@@ -1,6 +1,7 @@
 import React from "react";
+import { SellType } from "../App";
 
-export default function Selling() {
+export default function Selling({ showModal }: Args) {
   return (
     <section className="selling">
       <div className="container">
@@ -20,7 +21,7 @@ export default function Selling() {
             <div className="selling__card-price">
               390р.
             </div>
-            <div className="selling__card-button btn">
+            <div className="selling__card-button btn" onClick={() => showModal(SellType.X)}>
               Купить
             </div>
           </div>
@@ -37,7 +38,7 @@ export default function Selling() {
             <div className="selling__card-price">
               490р.
             </div>
-            <div className="selling__card-button btn">
+            <div className="selling__card-button btn" onClick={() => showModal(SellType.Black)}>
               Купить
             </div>
           </div>
@@ -54,7 +55,7 @@ export default function Selling() {
             <div className="selling__card-price">
               790р.
             </div>
-            <div className="selling__card-button btn">
+            <div className="selling__card-button btn" onClick={() => showModal(SellType.Premium)}>
               Купить
             </div>
           </div>
@@ -62,4 +63,8 @@ export default function Selling() {
       </div>
     </section>
   )
+}
+
+interface Args {
+  showModal: (type: SellType) => void
 }
